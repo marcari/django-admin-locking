@@ -1,1 +1,1 @@
-recursive-include locking *.css *.js *.svg
+recursive-include static *.css *.js *.svg
