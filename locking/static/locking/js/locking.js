@@ -159,7 +159,7 @@
                 error: function() {
                     self.disableForm();
                     if (self.hasLock) {
-                        alert('Another user has taken your lock on this form');
+                        alert('Un autre utilisateur a pris la main sur cet article');
                     }
                     self.hasLock = false;
                 }
@@ -223,7 +223,7 @@
         },
 
         takeLock: function() {
-            if (confirm('Are you sure you want to remove this lock?')) {
+            if (confirm('Êtes-vous surs de vouloir prendre la main sur cet article ?')) {
                 var self = this;
                 this.api.takeLock({
                     success: function() {

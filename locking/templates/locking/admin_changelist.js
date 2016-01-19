@@ -18,14 +18,14 @@
                 for (var i = 0; i < data.length; i++) {
                     user = data[i]['locked_by'];
                     if (user['username'] === options['currentUser']) {
-                        lockedMessage = "You are currently editing this";
+                        lockedMessage = "Vous éditez cet article";
                         lockedClass = "editing";
                     } else {
                         name = user['first_name'] + ' ' + user['last_name'];
                         if (name === ' ') {
                             name = user['username'];
                         }
-                        lockedMessage = 'Locked by ' + name + ' (' + user['email'] + ')';
+                        lockedMessage = 'Article en cours d\'édition par ' + name + ' (' + user['email'] + ')';
                         lockedClass = "locked";
                     }
                     $('#locking-' + data[i]['object_id']).addClass(lockedClass).attr('title', lockedMessage);

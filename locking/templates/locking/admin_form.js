@@ -18,8 +18,8 @@
         $.extend(LockingAdminForm.prototype, {
             warningHtml: '<ul class="messagelist grp-messagelist">' +
                             '<li class="warning grp-warning" id="locking-warning">' +
-                                'Form is locked by <span class="locking-locked-by"></span>' +
-                                '<a id="locking-take-lock" class="button grp-button" onclick="window.lockingForm.takeLock()">Take over lock</a>' +
+                                'Cet article est en cours d\'édition par <span class="locking-locked-by"></span>' +
+                                '<a id="locking-take-lock" class="button grp-button" onclick="window.lockingForm.takeLock()">Prendre la main sur l\'article</a>' +
                             '</li>' +
                          '</ul>',
             lockedBy: {
