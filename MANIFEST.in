@@ -1,0 +1,1 @@
+recursive-include deform *.pt *.po *.mo *.rst *.eot *.svg *.ttf *.woff *.css *.js *.md *.png *.gif
